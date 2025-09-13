@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="title" content="Information Form">
+<meta name="description" content="A form on personal address, educational background, contact info">
+<meta name="keywords" content="First Name, Last Name, country, hobby, Preferred Subject, Meal Plan, ">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+ <link rel="icon" type="img/icon" href="favicon.png">
+	<title>Information Form</title>
+
+</head>
+<body>
+	 <div class="form-container">
+    <h2>Student Information</h2>
+    <form action="thankyou.html" method="post">
+
+      <!-- PAGE 1 -->
+      <div class="form-page" id="page1">
+        <label id="head" for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label id="head" for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <label id="head" for="address">Address</label>
+        <input type="text" id="address" name="address" required>
+
+        <label id="head" for="nationality">Nationality</label>
+        <select id="nationality" name="nationality" required>
+          <option id="head" value="">--Select Nationality--</option>
+          <option value="bangladesh">Bangladesh</option>
+          <option value="india">India</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="usa">United States</option>
+          <option value="uk">United Kingdom</option>
+          <option value="canada">Canada</option>
+          <option value="australia">Australia</option>
+        </select>
+
+        <label id="head" for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" name="mobile" required>
+
+        <label id="head" for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label id="head" for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <div class="btn-group">
+          <button type="reset" class="btn btn-reset">Reset</button>
+          <a href="#page2" class="btn btn-next">Next</a>
+        </div>
+      </div>
+
+      <!-- PAGE 2 -->
+      <div class="form-page" id="page2">
+        <label id="head" for="subjects">Preferred Subjects</label>
+        <select id="subjects" name="subjects" multiple size="6" required>
+          <option value="architecture">Architecture</option>
+          <option value="cse">Computer Science</option>
+          <option value="cyber">Cyber Security</option>
+          <option value="math">Math</option>
+          <option value="physics">Physics</option>
+          <option value="nursing">Nursing</option>
+          <option value="chemistry">Chemistry</option>
+        </select>
+
+
+       <label>Enrollment Type</label>
+        <div class="option-group">
+          <label class="option">Full Time
+            <input type="radio" name="enrollment" value="full" required>
+          </label>
+          <label class="option">Part Time
+            <input type="radio" name="enrollment" value="part">
+          </label>
+          <label class="option">Online Delivered
+            <input type="radio" name="enrollment" value="online">
+          </label>
+        </div>
+
+        <label id="head">Housing Plan</label>
+        <div class="option-group">
+          <label class="option">Single Room (with bathroom)
+            <input type="radio" name="housing" value="single-bath" required>
+          </label>
+          <label class="option">Single Room (without bathroom)
+            <input type="radio" name="housing" value="single-nobath">
+          </label>
+          <label class="option">Double Room
+            <input type="radio" name="housing" value="double">
+          </label>
+          <label class="option">3 Bed Apartment
+            <input type="radio" name="housing" value="3-bed">
+          </label>
+          <label class="option">4 Bed Apartment
+            <input type="radio" name="housing" value="4-bed">
+          </label>
+          <label class="option">5 Bed Apartment
+            <input type="radio" name="housing" value="5-bed">
+          </label>
+        </div>
+
+        <label id="head">Meal Plan</label>
+        <div class="option-group">
+          <label class="option">$1500 CAD
+            <input type="radio" name="meal" value="1500" required>
+          </label>
+          <label class="option">$2000 CAD
+            <input type="radio" name="meal" value="2000">
+          </label>
+          <label class="option">$2500 CAD
+            <input type="radio" name="meal" value="2500">
+          </label>
+        </div>
+
+        <label id="head">Starting Term</label>
+        <div class="option-group">
+          <label class="option">Summer
+            <input type="radio" name="term" value="summer" required>
+          </label>
+          <label class="option">Winter
+            <input type="radio" name="term" value="winter">
+          </label>
+          <label class="option">Fall
+            <input type="radio" name="term" value="fall">
+          </label>
+        </div>
+      
+       
+        <div class="btn-group">
+          <a href="#page1" class="btn btn-back">Back</a>
+          <button type="reset" class="btn btn-reset">Reset</button>
+          <button type="submit" class="btn btn-next">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
